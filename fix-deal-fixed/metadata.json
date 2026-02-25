@@ -1,9 +1,0 @@
-{
-  "name": "FIX DEAL",
-  "description": "The Future of Buying & Selling in Sri Lanka. A modern, clean, and professional classified marketplace.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone",
-    "geolocation"
-  ]
-}
