@@ -17,7 +17,7 @@ export const Footer = () => {
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="bg-white p-2 rounded-lg">
-                <Car className="text-brand-dark w-6 h-6" />
+                <Car className="https://raw.githubusercontent.com/ahmath-musharraf/FixDeal/refs/heads/main/Fix2.png" />
               </div>
               <span className="font-display font-bold text-2xl tracking-tight">
                 FIX<span className="text-brand-accent">DEAL</span>
