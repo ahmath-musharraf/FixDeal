@@ -37,7 +37,7 @@ export const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="bg-white p-1 rounded-lg">
             <img 
-              src="/logo.png" 
+              src="https://raw.githubusercontent.com/ahmath-musharraf/FixDeal/refs/heads/main/Fix1.png" 
               alt="FIX DEAL Logo" 
               className="w-8 h-8 object-contain"
               referrerPolicy="no-referrer"
