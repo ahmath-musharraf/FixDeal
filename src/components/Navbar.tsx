@@ -35,8 +35,22 @@ export const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || !isHome ? 'glass-dark py-3 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="bg-white p-2 rounded-lg">
-            <Car className="text-brand-dark w-6 h-6" />
+          <div className="bg-white p-1 rounded-lg">
+            <img 
+              src="/logo.png" 
+              alt="FIX DEAL Logo" 
+              className="w-8 h-8 object-contain"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                // Fallback icon if image doesn't exist yet
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement?.classList.add('p-2');
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('class', 'text-brand-dark w-6 h-6');
+                svg.innerHTML = '<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9C2.1 11.6 2 11.8 2 12v4c0 .6.4 1 1 1h2m12 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2ZM5 17c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2Z"/>';
+                e.currentTarget.parentElement?.appendChild(svg);
+              }}
+            />
           </div>
           <span className={`font-display font-bold text-2xl tracking-tight text-white`}>
             FIX<span className="text-brand-accent">DEAL</span>
